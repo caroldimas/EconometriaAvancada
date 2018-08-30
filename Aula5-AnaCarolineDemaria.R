@@ -21,16 +21,12 @@ AR1
 AR2 <- arima(Inflacao, order=c(2,0,0))   #Modelo Autorregressivo de ordem 2
 AR2
 
-
-
-
 #Extras
-
 
 plot(decompose(Inflacao)) #Separa Sazonalidade, tendência e efeito aleatório dos dados.
 
 Previsão
-install.packages("Forecast")                 #Instala Pacote Forecast
+install.packages("forecast")                 #Instala Pacote Forecast
 install.packages("ggplot2")                  #Instala Pacote GGplot2
 library(forecast)                            #Carrega o Pacote Forecast
 library(ggplot2)
